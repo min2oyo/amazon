@@ -21,7 +21,6 @@ export default function Product({ id, title, image, price, rating }) {
         </div>
       </div>
       <img src={image} alt='#' />
-      {/* <img src='http://en.pimg.jp/024/292/158/1/24292158.jpg' alt='#' /> */}
       <button>장바구니 담기</button>
     </div>
   );

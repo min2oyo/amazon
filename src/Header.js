@@ -1,11 +1,14 @@
-import './Header.css';
+import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import { ShoppingBasket } from '@mui/icons-material';
+import './Header.css';
 
 export default function Header() {
   return (
     <div className='header'>
-      <img className='header_logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo' />
+      <Link to={"/"}>
+        <img className='header_logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo' />
+      </Link>
       <div className='header_search'>
         <input className='header_searchInput' type='text' />
         <SearchIcon className='header_searchIcon' />
@@ -24,12 +27,14 @@ export default function Header() {
           <span className='header_optionLineTwo'>구독과 좋아요</span>
         </div>
       </div>
-      <div className='header_optionBasket'>
-        <ShoppingBasket />
-        <span className='header_optionLineTwo_header_basketCount'>
+      <Link to={"/Checkout"}>
+        <div className='header_optionBasket'>
+          <ShoppingBasket />
+          <span className='header_optionLineTwo_header_basketCount'>
 
-        </span>
-      </div>
+          </span>
+        </div>
+      </Link>
     </div>
   );
 }

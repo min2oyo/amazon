@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Checkout from './Checkout';
 import Header from './Header';
 import Home from './Home';
 
@@ -10,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/checkout' element={<h1>장바구니 페이지 입니다</h1>} />
+          <Route path='/checkout' element={<Checkout />} />
         </Routes>
       </div>
     </BrowserRouter>
