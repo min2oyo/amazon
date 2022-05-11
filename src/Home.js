@@ -3,7 +3,18 @@ import './Home.css';
 export default function Home() {
   return (
     <div className="home">
-      <h1>본문</h1>
+      <div className="home-container">
+        <img className="home_image" src="./imgs/home.jpg" alt="" />
+        <div className='home_row'>
+          {/* 상품 */}
+        </div>
+        <div className='home_row'>
+          {/* 상품 */}
+        </div>
+        <div className='home_row'>
+          {/* 상품 */}
+        </div>
+      </div>
     </div>
   );
 }
