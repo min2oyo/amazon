@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import { ShoppingBasket } from '@mui/icons-material';
 import './Header.css';
+import { useStateValue } from './StateProvider';
 
 export default function Header() {
+
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     <div className='header'>
       <Link to={"/"}>
@@ -31,7 +35,8 @@ export default function Header() {
         <div className='header_optionBasket'>
           <ShoppingBasket />
           <span className='header_optionLineTwo_header_basketCount'>
-
+            {basket?.length}
+            {/* ?: optional 체인(?): basket값이 null, undefined 일때 한번 더 검증해서 오류시 undefined로 반환함 */}
           </span>
         </div>
       </Link>
