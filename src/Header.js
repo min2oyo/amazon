@@ -1,5 +1,6 @@
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
+import { ShoppingBasket } from '@mui/icons-material';
 
 export default function Header() {
   return (
@@ -22,6 +23,12 @@ export default function Header() {
           <span className='header_optionLineOne'>반가워요</span>
           <span className='header_optionLineTwo'>구독과 좋아요</span>
         </div>
+      </div>
+      <div className='header_optionBasket'>
+        <ShoppingBasket />
+        <span className='header_optionLineTwoheader_basketCount'>
+
+        </span>
       </div>
     </div>
   );

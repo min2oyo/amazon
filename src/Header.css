@@ -22,6 +22,14 @@
   border-radius: 20px;
 }
 
+.header_searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  /* 테두리는 없는 게 깔끔해 보임 */
+  width: 100%;
+}
+
 .header_searchIcon {
   background-color: #cd9042;
   padding: 5px;
@@ -40,4 +48,25 @@
   display: flex;
   justify-content: space-evenly;
   /* 공평하게 배치 */
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 3px;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header_optionLineTwoheader_basketCount {
+  margin-right: 10px;
+  margin-left: 10px;
 }
