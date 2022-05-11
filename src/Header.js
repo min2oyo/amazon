@@ -1,4 +1,5 @@
 import './Header.css';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function Header() {
   return (
@@ -6,6 +7,7 @@ export default function Header() {
       <img className='header_logo' src='./imgs/logo-amazon.jpg' alt='amazon-logo' />
       <div className='header_search'>
         <input className='header_searchInput' type='text' />
+        <SearchIcon className='header_searchIcon' />
       </div>
       <div className='header_nav'>
         <div className='header_option'>

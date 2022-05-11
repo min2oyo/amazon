@@ -13,3 +13,31 @@
   object-fit: contain;
   margin: 0 20px;
 }
+
+.header_search {
+  display: flex;
+  flex: 1;
+  /* 차지하는 비율 */
+  align-items: center;
+  border-radius: 20px;
+}
+
+.header_searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 15px;
+}
+
+.header_option {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+  /* 공평하게 배치 */
+}
