@@ -5,7 +5,7 @@ import { ShoppingBasket } from '@mui/icons-material';
 export default function Header() {
   return (
     <div className='header'>
-      <img className='header_logo' src='./imgs/logo-amazon.jpg' alt='amazon-logo' />
+      <img className='header_logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo' />
       <div className='header_search'>
         <input className='header_searchInput' type='text' />
         <SearchIcon className='header_searchIcon' />
@@ -26,7 +26,7 @@ export default function Header() {
       </div>
       <div className='header_optionBasket'>
         <ShoppingBasket />
-        <span className='header_optionLineTwoheader_basketCount'>
+        <span className='header_optionLineTwo_header_basketCount'>
 
         </span>
       </div>
